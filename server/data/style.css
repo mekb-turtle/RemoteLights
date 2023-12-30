@@ -1,0 +1,180 @@
+td, th {
+	width: 1em;
+	height: 1em;
+	text-align: center;
+}
+
+a {
+	color: var(--ctp-text);
+	text-decoration: none;
+}
+
+a:not(.no-a), .a {
+	color: var(--accent);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:not(.no-a):hover, .a:hover {
+	text-decoration: underline;
+}
+
+:focus {
+	border-radius: 2px;
+	outline: var(--accent) solid 1px;
+}
+
+.left {
+	text-align: left;
+}
+
+table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+html, body {
+	background-color: var(--ctp-base);
+	color: var(--ctp-text);
+	font-family: "Ubuntu", "Roboto", "Segoe UI", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+.subtext1 {
+	color: var(--ctp-subtext1);
+}
+
+.subtext0 {
+	color: var(--ctp-subtext0);
+}
+
+.margin-r {
+	margin-right: 0.25em;
+}
+
+.margin-l {
+	margin-left: 0.25em;
+}
+
+.no-bullet {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.inline-list > li {
+	display: inline-block;
+}
+
+header, footer {
+	padding: 0 4em;
+}
+
+main {
+	padding: 2em 6em;
+}
+
+@media screen and (min-width: 801px) and (max-width: 999px) {
+	header, footer {
+	  padding: 0 2em !important;
+	}
+
+	main {
+	  padding: 2em 4em !important;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+	header, footer {
+	  padding: 0 0.75em !important;
+	}
+
+	main {
+	  padding: 2em 2em !important;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	header, footer {
+	  padding: 0 0.2em !important;
+	}
+
+	main {
+	  padding: 2em 1em !important;
+	}
+}
+
+code, pre, kbd {
+	font-family: "Fira Code", "Consolas", "Courier New", sans-serif;
+	background-color: var(--ctp-surface0);
+	border-radius: 10px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+.error {
+	color: var(--ctp-red);
+}
+
+.success {
+	color: var(--ctp-green);
+}
+
+.small {
+	font-size: 0.625em;
+}
+
+.shadow, .popout {
+	box-shadow: 0 0 0.3em 0.1em var(--shadow);
+}
+
+.hidden {
+	display: none;
+}
+
+.input, .button {
+	border: none;
+	background-color: var(--ctp-surface0);
+	padding: 1em;
+	margin: 0.25em;
+	border-radius: 1em;
+	display: inline-block;
+	transition: transform 0.3s;
+	color: var(--ctp-text);
+}
+
+.popout {
+	background-color: var(--ctp-surface0);
+	padding: 1em;
+	margin: 1em;
+	border-radius: 1em;
+	display: inline-block;
+	transition: transform 0.3s;
+}
+
+.popout:hover {
+	transform: scale(1.15);
+}
+
+.popout-padding {
+	padding: 0.6em 1em 1em 1em;
+}
+
+.symbol {
+	position: relative;
+	top: 5px;
+	left: 0;
+}
+
+h1 {
+	text-shadow: 0 0 0.3em var(--shadow);
+}
+
+svg {
+	color: var(--ctp-text);
+}
